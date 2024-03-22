@@ -25,9 +25,9 @@ namespace HtmlAgilityPack
         /// </summary>
         /// <param name="html"></param>
         /// <returns></returns>
-        public static HtmlNode Xpath(this string html)
+        public static HtmlNode XPath(this string html)
         {
-            return LoadHtml(html).Xpath(html);
+            return LoadHtml(html).XPath(html);
         }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace HtmlAgilityPack
         /// <param name="htmlDoc"></param>
         /// <param name="xpath"></param>
         /// <returns></returns>
-        public static HtmlNode Xpath(this HtmlDocument htmlDoc, string xpath)
+        public static HtmlNode XPath(this HtmlDocument htmlDoc, string xpath)
         {
             return htmlDoc.DocumentNode.SelectSingleNode(xpath);
         }
@@ -47,7 +47,7 @@ namespace HtmlAgilityPack
         /// <param name="htmlNode"></param>
         /// <param name="xpath"></param>
         /// <returns></returns>
-        public static HtmlNode Xpath(this HtmlNode htmlNode, string xpath)
+        public static HtmlNode XPath(this HtmlNode htmlNode, string xpath)
         {
             return htmlNode.SelectSingleNode(xpath);
         }
@@ -58,9 +58,9 @@ namespace HtmlAgilityPack
         /// <param name="html"></param>
         /// <param name="xpath"></param>
         /// <returns></returns>
-        public static HtmlNodeCollection XpathList(this string html, string xpath)
+        public static HtmlNodeCollection XPathList(this string html, string xpath)
         {
-            return LoadHtml(html).XpathList(xpath);
+            return LoadHtml(html).XPathList(xpath);
         
         }
 
@@ -70,7 +70,7 @@ namespace HtmlAgilityPack
         /// <param name="htmlDoc"></param>
         /// <param name="xpath"></param>
         /// <returns></returns>
-        public static HtmlNodeCollection XpathList(this HtmlDocument htmlDoc, string xpath)
+        public static HtmlNodeCollection XPathList(this HtmlDocument htmlDoc, string xpath)
         {
             return htmlDoc.DocumentNode.SelectNodes(xpath);
         }
@@ -81,7 +81,7 @@ namespace HtmlAgilityPack
         /// <param name="htmlDoc"></param>
         /// <param name="xpath"></param>
         /// <returns></returns>
-        public static HtmlNodeCollection XpathList(this HtmlNode htmlDoc, string xpath)
+        public static HtmlNodeCollection XPathList(this HtmlNode htmlDoc, string xpath)
         {
             return htmlDoc.SelectNodes(xpath);
         }
@@ -92,7 +92,7 @@ namespace HtmlAgilityPack
         /// <param name="htmlDoc"></param>
         /// <param name="xpath"></param>
         /// <returns></returns>
-        public static string XpathStr(this HtmlDocument htmlDoc, string xpath)
+        public static string XPathStr(this HtmlDocument htmlDoc, string xpath)
         {
             var htmlNode = htmlDoc.DocumentNode.SelectSingleNode(xpath);
             if (htmlNode == null)
@@ -111,7 +111,7 @@ namespace HtmlAgilityPack
         /// <param name="sourceNode"></param>
         /// <param name="xpath"></param>
         /// <returns></returns>
-        public static string XpathStr(this HtmlNode sourceNode, string xpath)
+        public static string XPathStr(this HtmlNode sourceNode, string xpath)
         {
             var htmlNode = sourceNode?.SelectSingleNode(xpath);
             if (htmlNode == null)
@@ -130,7 +130,7 @@ namespace HtmlAgilityPack
         /// <param name="htmlDoc"></param>
         /// <param name="xpath"></param>
         /// <returns></returns>
-        public static IEnumerable<string> XpathListStr(this HtmlDocument htmlDoc, string xpath)
+        public static IEnumerable<string> XPathListStr(this HtmlDocument htmlDoc, string xpath)
         {
             var htmlNodes = htmlDoc.DocumentNode.SelectNodes(xpath);
             if (htmlNodes == null)
@@ -152,7 +152,7 @@ namespace HtmlAgilityPack
         /// <param name="sourceNode"></param>
         /// <param name="xpath"></param>
         /// <returns></returns>
-        public static IEnumerable<string> XpathListStr(this HtmlNode sourceNode, string xpath)
+        public static IEnumerable<string> XPathListStr(this HtmlNode sourceNode, string xpath)
         {
             var htmlNodes = sourceNode.SelectNodes(xpath);
             if (htmlNodes == null)
