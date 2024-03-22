@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/src/TestProject1
+/src/.idea/.idea.ZF.HtmlAgilityPack.Extensions/.idea
+/src/ZF.HtmlAgilityPack.Extensions.sln
