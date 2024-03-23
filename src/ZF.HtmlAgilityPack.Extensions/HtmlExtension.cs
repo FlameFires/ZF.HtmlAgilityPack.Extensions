@@ -1,4 +1,5 @@
-﻿using HtmlAgilityPack;
+﻿using System.Collections.Generic;
+using System;
 
 namespace HtmlAgilityPack
 {
@@ -61,7 +62,6 @@ namespace HtmlAgilityPack
         public static HtmlNodeCollection XPathList(this string html, string xpath)
         {
             return LoadHtml(html).XPathList(xpath);
-        
         }
 
         /// <summary>
