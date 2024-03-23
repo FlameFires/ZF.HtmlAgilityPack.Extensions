@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System;
-
-namespace HtmlAgilityPack
+﻿namespace HtmlAgilityPack
 {
     public static class HtmlExtension
     {

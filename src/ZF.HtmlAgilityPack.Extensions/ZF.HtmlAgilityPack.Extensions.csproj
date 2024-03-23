@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-<!--		<ImplicitUsings>enable</ImplicitUsings>-->
-		<Version>1.0.2</Version>
-<!--		<Nullable>enable</Nullable>-->
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Version>1.0.3</Version>
+		<Nullable>enable</Nullable>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>ZF.HtmlAgilityPack.Extensions</Title>
 		<PackageTags>HtmlAgilityPack, XPath</PackageTags>
@@ -11,11 +11,22 @@
 		<Authors>zerofire</Authors>
 		<RepositoryUrl>https://github.com/FlameFires/ZF.HtmlAgilityPack.Extensions</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<TargetFrameworks>net6.0;netstandard2.1;net48</TargetFrameworks>
+		<Description>ZF.HtmlAgilityPack.Extensions is an extension package for HtmlAgilityPack. It makes it easier to use HtmlAgilityPack via XPath.</Description>
+		<Copyright>MIT</Copyright>
+		<PackageIcon>icon.png</PackageIcon>
+		<TargetFramework>net6.0</TargetFramework>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="HtmlAgilityPack" Version="1.11.59" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="icon.png">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	</ItemGroup>
 
 </Project>
